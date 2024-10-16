@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    background-image: url('/Art/bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.game-container {
+    margin: 0 auto;
+    width: 30dvw;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid rgb(252, 193, 18);
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 40px black, 0 0 15px rgb(145 113 18 / 70%) inset;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-image: url('/Art/Interface/eventbg.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    min-width: 400px;
+}
+.question {
+    font-size: 1.75em;
+    padding: 10px;
+}
+.answers {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, rgba(238, 163, 37, 0.87), transparent);
+    border-top: 2px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.answer-btn {
+    padding: 10px;
+    font-size: 1.5em;
+    background: linear-gradient(0deg, rgb(49, 28, 6) 0%, rgb(95, 59, 14) 100%);
+    border: 1px solid #9e5b1c;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 0 5px black;
+    transition: all 0.1s;
+    text-shadow: 0px 1px 2px black, 0px 1px 3px black, 0px 0px 3px black, 0px 0px 3px black;
+}
+
+.answer-btn:hover {
+    border: 1px solid #aa9d82;
+    filter: brightness(1.2);
+    box-shadow: 0 0 10px rgb(0, 255, 255);
+}
+.score-lives {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, transparent, rgba(238, 163, 37, 0.87), transparent);
+    border-top: 2px solid;
+    font-size: 1.5em;
+}
+.score-lives p {
+display: block;
+}
+
+
+#adv-pic {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border: 2px solid rgb(206, 47, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    transition: all 0.4s;
+}
+
+#result-message {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgb(0, 0, 0);
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    z-index: 2;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
